@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_dialog_width"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/pasclibbase_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+  <ImageView
+      android:id="@+id/base_per_icon"
+      android:layout_width="@dimen/base_img_size"
+      android:layout_height="@dimen/base_img_size"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/pasclibbase_ic_default"
+      android:layout_marginTop="@dimen/per_margin_vertical"
+      />
+
+  <TextView
+      android:id="@+id/tv_per_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:textColor="@color/base_primary_color"
+      android:textSize="@dimen/base_primary_ts"
+      android:layout_below="@id/base_per_icon"
+      android:layout_centerHorizontal="true"
+      tools:text="@string/base_open_default"
+      android:layout_marginTop="@dimen/base_title_top"
+      android:layout_marginBottom="@dimen/base_title_bottom"
+      android:layout_marginLeft="@dimen/per_margin_horizontal"
+      android:layout_marginRight="@dimen/per_margin_vertical"
+      />
+
+  <TextView
+      android:id="@+id/tv_per_hint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textColor="@color/base_hint_color"
+      android:textSize="@dimen/base_hint_ts"
+      android:layout_below="@id/tv_per_title"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/base_hint_bottom"
+      tools:text="@string/base_perm_hint_default"
+      android:layout_marginLeft="@dimen/per_margin_horizontal"
+      android:layout_marginRight="@dimen/per_margin_horizontal"
+      />
+
+
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_btn_height"
+        android:background="@drawable/pasclibbase_btn_bg"
+        style="?android:borderlessButtonStyle"
+        android:layout_below="@id/tv_per_hint"
+        android:text="@string/base_go_open"
+        android:textSize="@dimen/base_btn_ts"
+        android:textColor="@color/base_btn_tc"
+        android:layout_marginLeft="@dimen/per_margin_horizontal"
+        android:layout_marginRight="@dimen/per_margin_vertical"
+        android:layout_marginBottom="@dimen/per_margin_vertical"
+        />
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_close_padding"
+        android:src="@drawable/pasclibbase_ic_close"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

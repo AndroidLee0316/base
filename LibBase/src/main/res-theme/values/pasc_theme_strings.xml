@@ -1,0 +1,10 @@
+<resources>
+  <string name="base_open_phone">开启电话</string>
+  <string name="base_open_storage">开启存储</string>
+  <string name="base_open_camera">开启相机</string>
+  <string name="base_open_loc">开启定位</string>
+  <string name="base_open_default">开启相关权限</string>
+  <string name="base_perm_hint_default">为您提供更完善的服务</string>
+  <string name="base_perm_loc_hint">为您提供更完善的服务</string>
+  <string name="base_go_open">去开启</string>
+</resources>

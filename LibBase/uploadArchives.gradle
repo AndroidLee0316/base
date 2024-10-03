@@ -1,0 +1,17 @@
+apply plugin: 'maven-publish'
+//apply from: 'uploadArchives_release.gradle'
+//根据properties中设置的参数来选择不同的上传脚本
+apply plugin: 'com.github.dcendents.android-maven'//this
+group='com.github.AndroidLee0316'//this
+version = "base_1.0.0"//this
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.pasc.lib'
+                artifactId = 'base'
+                version = '1.0.0'
+            }
+        }
+    }
+}
